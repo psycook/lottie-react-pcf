@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="smc" constructor="LottieReactComponent" version="0.0.1" display-name-key="LottieReactComponent" description-key="LottieReactComponent description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="json" display-name-key="Animation JSON" description-key="The Lottie animation json" of-type="SingleLine.TextArea" usage="input" required="true" default-value="{}"/>
+    <property name="loop" display-name-key="Loop" description-key="Should the animation loop" of-type="TwoOptions" usage="input" required="true" default-value="false"/>
+    <property name="loopCount" display-name-key="Loop Count" description-key="The animation loop count, -1 to loop forever" of-type="Decimal" usage="input" required="true" default-value="false"/>
+    <property name="autoplay" display-name-key="Autoplay" description-key="Should the animation autoplay" of-type="TwoOptions" usage="input" required="true" default-value="false"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/styles.css" order="1" />
+      <platform-library name="React" version="16.8.6" />
+    </resources>
+  </control>
+</manifest>
