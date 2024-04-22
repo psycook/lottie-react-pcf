@@ -39,7 +39,7 @@ export class LottieReactComponent implements ComponentFramework.ReactControl<IIn
             json: this._context.parameters.json.raw || TEST_JSON,
             loop: this._context.parameters.loop.raw || false,
             loopCount: this._context.parameters.loopCount.raw || 0,
-            autoplay: this._context.parameters.autoplay.raw || false,
+            playing: this._context.parameters.playing.raw || false,
             width: `${this._context.mode.allocatedWidth-2}px`,
             height: `${this._context.mode.allocatedHeight-2}px`,
         };
